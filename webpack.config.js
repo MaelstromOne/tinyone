@@ -13,14 +13,23 @@ module.exports = {
         port: 4200
     },
     module: {
-        rules: [{
+        rules: [
+            {
             test:/\.(s*)css$/,
             use: [
                 miniCss.loader,
                 'css-loader',
                 'sass-loader',
             ]
-        }]
+        },
+            {
+                test: /\.(jpg|png|svg|ttf|woff|eot)$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'img/[name].[ext]',
+                },
+            }
+        ]
     },
     plugins: [
         new HTMLPlugin({

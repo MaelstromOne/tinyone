@@ -1,0 +1,91 @@
+header {
+  background: $bg-top-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 60px;
+
+    .menu {
+      flex-basis: 33%;
+      img {
+        content: url("../img/menu-icon.png");
+      }
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        content: url("../img/fingerprint.png");
+        margin-right: 10px;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 30px;
+      }
+    }
+
+    .social {
+      flex-basis: 33%;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+          margin-left: 20px;
+        }
+
+        .facebook {
+          content: url("../img/facebook ico.png")
+        }
+
+        .twitter {
+          content: url("../img/twitter ico.png")
+        }
+
+        .google {
+          content: url("../img/google + ico.png")
+        }
+
+        .pinterest {
+          content: url("../img/pinterest ico.png")
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+
+    .container {
+      flex-wrap: wrap;
+
+      .logo {
+        order: -1;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+
+      .menu {
+        flex-basis: 10%;
+      }
+
+      .social {
+        flex-basis: 90%;
+
+        ul {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
