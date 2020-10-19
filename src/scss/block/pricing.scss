@@ -1,0 +1,20 @@
+.pricing {
+  margin-top: 150px;
+
+  .pricing-header {
+    margin: 0 auto;
+    max-width: 720px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

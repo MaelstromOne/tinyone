@@ -1,0 +1,82 @@
+.features {
+  margin-top: 115px;
+
+  .features__header {
+    margin: 0 auto;
+    max-width: 720px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .features__body {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .features__element {
+      flex-basis: 300px;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 90px;
+
+      img {
+        object-fit: contain;
+        width: auto;
+        height: auto;
+        align-self: flex-start;
+      }
+
+      #features-icon__1 {
+        content: url("../img/icon-font-1.png");
+      }
+
+      #features-icon__2 {
+        content: url("../img/icon-font-2.png");
+      }
+
+      #features-icon__3 {
+        content: url("../img/icon-font-3.png");
+      }
+
+      #features-icon__4 {
+        content: url("../img/icon-font-4.png");
+      }
+
+      #features-icon__5 {
+        content: url("../img/icon-font-5.png");
+      }
+
+      #features-icon__6 {
+        content: url("../img/icon-font-6.png");
+      }
+
+      .features-content {
+        flex-basis: 200px;
+        text-align: left;
+
+        h2 {
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 700;
+        }
+
+        p {
+          margin-top: 15px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
