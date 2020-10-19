@@ -1,103 +1,107 @@
 .header {
   background: $bg-header-color;
 
-  .header__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 60px;
+  .container {
 
-    .menu {
-      flex-basis: 33%;
-      img {
-        content: url("../img/menu-icon.png");
-      }
-    }
-
-    .logo {
+    .header__top {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      padding-left: 20px;
+      padding-right: 10px;
+      padding-top: 60px;
 
-      img {
-        content: url("../img/fingerprint.png");
-        margin-right: 10px;
+      .menu {
+        flex-basis: 33%;
+        text-align: left;
+        img {
+          content: url("../img/menu-icon.png");
+        }
       }
 
-      h1 {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 20px;
-        color: $black-text;
-      }
-    }
-
-    .social {
-      flex-basis: 33%;
-      ul {
+      .logo {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
 
-        li {
-          margin-left: 20px;
+        img {
+          content: url("../img/fingerprint.png");
+          margin-right: 10px;
         }
 
-        .facebook {
-          content: url("../img/facebook ico.png")
+        h1 {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 20px;
+          color: $black-text;
         }
+      }
 
-        .twitter {
-          content: url("../img/twitter ico.png")
-        }
+      .social {
+        flex-basis: 33%;
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
 
-        .google {
-          content: url("../img/google + ico.png")
-        }
+          li {
+            margin-left: 20px;
+          }
 
-        .pinterest {
-          content: url("../img/pinterest ico.png")
+          .facebook {
+            content: url("../img/facebook ico.png")
+          }
+
+          .twitter {
+            content: url("../img/twitter ico.png")
+          }
+
+          .google {
+            content: url("../img/google + ico.png")
+          }
+
+          .pinterest {
+            content: url("../img/pinterest ico.png")
+          }
         }
       }
     }
-  }
 
-  .header__body {
-    margin: 260px auto 0;
-    max-width: 500px;
+    .header__body {
+      margin: 260px auto 0;
+      max-width: 500px;
 
-    h2 {
-      font-weight: 700;
-      font-size: 48px;
-      color: $black-text;
-      text-align: center;
+      h2 {
+        font-weight: 700;
+        font-size: 48px;
+        color: $black-text;
+        text-align: center;
 
-    }
+      }
 
-    p {
-      margin-top: 35px;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      color: $black-text;
-      text-align: center;
-    }
+      p {
+        margin-top: 35px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: $black-text;
+        text-align: center;
+      }
 
-    a {
-      $values: (fs: 22px, lh: 24px, w: 255px);
-      @include btn($values...) {
-        padding: 20px 0;
-        margin: 45px auto 0;
-      };
-    }
+      a {
+        $values: (fs: 22px, lh: 24px, w: 255px);
+        @include btn($values...) {
+          padding: 20px 0;
+          margin: 45px auto 0;
+        };
+      }
 
-    .header__arrow {
-      display: block;
-      margin: 185px auto 0px;
-      padding-bottom: 55px;
-      content: url("../img/arrow.png");
+      .header__arrow {
+        display: block;
+        margin: 185px auto 0px;
+        padding-bottom: 55px;
+        content: url("../img/arrow.png");
+      }
     }
   }
 }
