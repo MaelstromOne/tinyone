@@ -1,0 +1,94 @@
+.contact {
+  margin-top: 200px;
+  margin-bottom: 75px;
+
+  .contact-header {
+    margin: 120px auto 0;
+    max-width: 720px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 24px;
+      color: $gray;
+    }
+  }
+
+  .contact-body {
+    margin-top: 55px;
+
+    .contact-address {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 720px;
+
+      .contact-element {
+        flex-basis: 170px;
+        margin: 0 10px 40px;
+
+        h2 {
+          margin-top: 25px;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        p {
+          color: $gray;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    form {
+      margin: 0 auto;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-top: 20px;
+        border: 2px solid $black;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px 18px;
+      }
+
+      textarea {
+        margin-top: 20px;
+        border: 2px solid $black;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px 18px;
+        height: 200px;
+      }
+
+      input[type=submit] {
+        $values: (background-color: $black, fs: 16px, lh: 24px, w: 170px, color: $white);
+        @include btn($values...) {
+          margin-top: 25px;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+
+    .contact-body {
+
+      form {
+        margin: 0 20px;
+      }
+    }
+  }
+}

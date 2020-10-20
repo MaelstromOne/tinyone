@@ -6,7 +6,8 @@
   margin: 0 auto;
 }
 
-@mixin btn($fs: 9px, $lh: 10px, $w: 114px) {
+@mixin btn($background-color: tranparent, $fs: 9px, $lh: 10px, $w: 114px, $color: $dark) {
+  margin: 0 auto;
   width: $w;
   font-size: $fs;
   line-height: $lh;
@@ -16,10 +17,12 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  color: $dark;
+  color: $color;
+  background-color: $background-color;
   @content;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: invert($color);
   }
 }

@@ -1,0 +1,92 @@
+.stats {
+
+  .stats-header {
+    margin: 120px auto 0;
+    max-width: 720px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 24px;
+      color: $gray;
+    }
+  }
+
+  .stats-body {
+    margin-top: 55px;
+
+    .stats-block {
+      margin: 0 auto;
+      max-width: 620px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-end;
+
+      .stats-element {
+        margin-bottom: 40px;
+        flex-basis: 100px;
+
+        h2 {
+          margin-top: 20px;
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        p {
+          margin-top: 5px;
+          font-size: 14px;
+          color: $gray;
+        }
+      }
+    }
+
+    .testimonial {
+      margin: 45px auto 0;
+      max-width: 480px;
+
+      header {
+        margin-top: 20px;
+
+        h2 {
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        p {
+          margin-top: 15px;
+          font-size: 16px;
+          color: $gray;
+        }
+      }
+
+      p {
+        margin-top: 25px;
+        font-size: 20px;
+        line-height: 24px;
+        color: $gray;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .stats {
+
+    .stats-body {
+
+      .stats-block {
+
+        .stats-element {
+
+          flex-basis: 150px;
+        }
+      }
+    }
+  }
+}
