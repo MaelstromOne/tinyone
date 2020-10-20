@@ -6,20 +6,20 @@
   margin: 0 auto;
 }
 
-@mixin btn($bg: transparent, $fs: 9px, $lh: 13px, $w: 114px) {
+@mixin btn($fs: 9px, $lh: 10px, $w: 114px) {
   width: $w;
   font-size: $fs;
   line-height: $lh;
-  background-color: $bg;
-  border: 2px solid $black-text;
+  border: 2px solid $dark;
   display: block;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
+  color: $dark;
   @content;
 
   &:hover {
-    background-color: lighten($bg, 15%);
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }

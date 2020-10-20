@@ -33,7 +33,7 @@
           font-weight: 700;
           font-size: 30px;
           line-height: 20px;
-          color: $black-text;
+          color: $dark;
         }
       }
 
@@ -47,22 +47,6 @@
           li {
             margin-left: 20px;
           }
-
-          .facebook {
-            content: url("../img/facebook ico.png")
-          }
-
-          .twitter {
-            content: url("../img/twitter ico.png")
-          }
-
-          .google {
-            content: url("../img/google + ico.png")
-          }
-
-          .pinterest {
-            content: url("../img/pinterest ico.png")
-          }
         }
       }
     }
@@ -74,7 +58,7 @@
       h2 {
         font-weight: 700;
         font-size: 48px;
-        color: $black-text;
+        color: $dark;
         text-align: center;
 
       }
@@ -84,7 +68,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-        color: $black-text;
+        color: $dark;
         text-align: center;
       }
 

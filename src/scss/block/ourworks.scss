@@ -1,0 +1,119 @@
+.ourworks {
+
+  .ourworks-header {
+    margin: 120px auto 0;
+    max-width: 720px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 20px;
+      color: $gray;
+    }
+  }
+
+  .ourworks-body {
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .ourworks-element {
+      margin: 0 10px 70px;
+      flex-basis: 220px;
+
+      .img-block {
+        position: relative;
+        font-size: 14px;
+
+        .block-add-work {
+          background-color: $dark;
+          width: 220px;
+          height: 220px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .add-work {
+            background-color: $white;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 14px;
+              height: 14px;
+            }
+          }
+        }
+
+        img {
+          width: 220px;
+          height: 220px;
+        }
+
+        .views {
+          position: absolute;
+          left: 10px;
+          bottom: 10px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+            margin-right: 10px;
+          }
+
+          p {
+            margin: 0;
+            color: $white;
+          }
+
+        }
+
+        .date {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+            margin-left: 10px;
+          }
+
+          p {
+            margin: 0;
+            color: $white;
+          }
+        }
+
+      }
+
+      h2 {
+        margin-top: 25px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      p {
+        margin-top: 15px;
+        font-size: 16px;
+        color: $gray;
+      }
+
+    }
+  }
+}
