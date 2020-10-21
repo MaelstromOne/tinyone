@@ -14,9 +14,6 @@
       .menu {
         flex-basis: 33%;
         text-align: left;
-        img {
-          content: url("../img/menu-icon.png");
-        }
       }
 
       .logo {
@@ -25,7 +22,6 @@
         align-items: center;
 
         img {
-          content: url("../img/fingerprint.png");
           margin-right: 10px;
         }
 
@@ -84,7 +80,6 @@
         display: block;
         margin: 185px auto 0px;
         padding-bottom: 55px;
-        content: url("../img/arrow.png");
       }
     }
   }
