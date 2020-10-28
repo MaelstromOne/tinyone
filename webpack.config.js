@@ -15,13 +15,13 @@ module.exports = {
     module: {
         rules: [
             {
-            test:/\.(s*)css$/,
-            use: [
-                miniCss.loader,
-                'css-loader',
-                'sass-loader',
-            ]
-        },
+                test:/\.(s*)css$/,
+                use: [
+                    miniCss.loader,
+                    'css-loader',
+                    'sass-loader',
+                ]
+            },
             {
                 test: /\.(jpg|png|svg|ttf|woff|eot)$/,
                 loader: 'url-loader',
