@@ -27,7 +27,7 @@ module.exports = {
                 test: /\.(jpg|png|svg|ttf|woff|eot)$/,
                 loader: 'url-loader',
                 options: {
-                    limit: 1000,
+                    limit: 10000,
                     publicPath: "img",
                     outputPath: 'img',
                 }
