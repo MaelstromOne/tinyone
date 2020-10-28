@@ -31,33 +31,12 @@
         position: relative;
         font-size: 14px;
 
-        .block-add-work {
-          background-color: $dark;
+        img {
           width: 220px;
           height: 220px;
           display: flex;
           justify-content: center;
           align-items: center;
-
-          .add-work {
-            background-color: $white;
-            border-radius: 50%;
-            width: 48px;
-            height: 48px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-              width: 14px;
-              height: 14px;
-            }
-          }
-        }
-
-        img {
-          width: 220px;
-          height: 220px;
         }
 
         .views {
@@ -78,7 +57,6 @@
             margin: 0;
             color: $white;
           }
-
         }
 
         .date {
@@ -101,6 +79,30 @@
           }
         }
 
+        .add-work {
+          display: none;
+        }
+
+        &:hover {
+          .add-work {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $white;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 14px;
+              height: 14px;
+            }
+          }
+        }
       }
 
       h3 {
