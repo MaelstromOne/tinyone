@@ -94,6 +94,16 @@ footer {
   }
 }
 
+
+@media (max-width: 780px) {
+  footer {
+    .footer-header {
+      padding: 0 20px;
+    }
+  }
+}
+
+
 @media (max-width: 650px) {
   footer {
 

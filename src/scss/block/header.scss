@@ -85,6 +85,18 @@
   }
 }
 
+@media (max-width: 540px) {
+  .header {
+
+    .container {
+
+      .header__body {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
 @media (max-width: 400px) {
   header {
 

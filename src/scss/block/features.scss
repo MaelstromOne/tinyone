@@ -56,3 +56,11 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .features {
+    .features__header {
+      padding: 0 20px;
+    }
+  }
+}
