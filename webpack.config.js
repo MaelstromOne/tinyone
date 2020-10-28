@@ -31,6 +31,23 @@ module.exports = {
                     publicPath: "img",
                     outputPath: 'img',
                 }
+            },
+            {
+                test: /\.(jpg|png|gif|svg)$/,
+                loader: 'image-webpack-loader',
+                options: {
+                    mozjpeg: {
+                        progressive: true,
+                        quality: 40
+                    },
+                    optipng: {
+                        optimizationLevel: 4
+                    },
+                    pngquant: {
+                        quality: [0.50, 0.70],
+                        speed: 8
+                    }
+                }
             }
         ]
     },
