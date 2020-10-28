@@ -1,6 +1,7 @@
 const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
 const HTMLPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
     entry: './src/index.js',
@@ -26,12 +27,15 @@ module.exports = {
                 test: /\.(jpg|png|svg|ttf|woff|eot)$/,
                 loader: 'url-loader',
                 options: {
-                    name: 'img/[name].[ext]',
-                },
+                    limit: 1000,
+                    publicPath: "img",
+                    outputPath: 'img',
+                }
             }
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HTMLPlugin({
             filename: "index.html",
             template: "./src/index.html"
