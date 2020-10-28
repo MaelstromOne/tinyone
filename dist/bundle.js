@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".dropbtn").addEventListener("click",(function(){document.getElementById("myDropdown").classList.toggle("show")})),window.onclick=function(t){if(!t.target.closest(".dropbtn")){var e,o=document.getElementsByClassName("dropdown-content");for(e=0;e<o.length;e++){var n=o[e];n.classList.contains("show")&&n.classList.remove("show")}}}})();
